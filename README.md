@@ -33,6 +33,7 @@
 	- Make sure the docker instance is running by executing `docker ps`. This displays all servers that are running.
 
 4. Navigate to the project directory **jdbc-example/hibernate** and run `mvn clean test spring-boot:run`. 
+	- **Check to make sure your application.properties file is using the username "root" and the pass "pass". Otherwise the database will not connect.**
 
 5. You should be able to successfully get a response. Open Postman and put "http://localhost:8080/api/students" in the URL, and select "GET" as
 	your request type. The response should return "[]" with a 200 status on your initial connection to the database.
